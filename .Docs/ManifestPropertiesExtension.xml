@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<docs>
+  <header>
+    <summary>
+      Extension of property dictionary.
+    </summary>
+  </header>
+  <method name="SetColorOn(Dictionary{KeyValuePair{ManifestPropertyType, String}}, Int)">
+    <summary>
+      Sets value for <see cref="ManifestPropertyType.Color"/>.
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+    <param name="RGB">
+      RGB color stored in int.
+    </param>
+  </method>
+  <method name="SetColorOn(Dictionary{KeyValuePair{ManifestPropertyType, String}}, Byte, Byte, Byte)">
+    <summary>
+      Sets value for <see cref="ManifestPropertyType.Color"/>.
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+    <param name="R">
+      Red of RGB color.
+    </param>
+    <param name="G">
+      Green of RGB color.
+    </param>
+    <param name="B">
+      Blue of RGB color.
+    </param>
+  </method>
+  <method name="SetThemeOnDark(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Sets value for <see cref="ManifestPropertyType.Theme"/> on Dark.
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+  </method>
+  <method name="SetThemeOnLight(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Sets value for <see cref="ManifestPropertyType.Theme"/> on Light.
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+  </method>
+  <method name="SetLabelStatusOnOn(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Sets value for <see cref="ManifestPropertyType.LabelStatus"/> on On.
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+  </method>
+  <method name="SetLabelStatusOnOff(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Sets value for <see cref="ManifestPropertyType.LabelStatus"/> on Off.
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+  </method>
+  <method name="SetSmallImagePathOn(Dictionary{KeyValuePair{ManifestPropertyType, String}}, String)">
+    <summary>
+      Sets value for <see cref="ManifestPropertyType.SmallImagePath"/>.
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+    <param name="Path">
+      Absolute or relative path, or name.
+    </param>
+  </method>
+  <method name="SetMediumImagePathOn(Dictionary{KeyValuePair{ManifestPropertyType, String}}, String)">
+    <summary>
+      Sets value for <see cref="ManifestPropertyType.MediumImagePath"/>.
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+    <param name="Path">
+      Absolute or relative path, or name.
+    </param>
+  </method>
+  <method name="IsColorSet(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Is <see cref="ManifestPropertyType.Color"/> set?
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+  </method>
+  <method name="IsThemeSet(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Is <see cref="ManifestPropertyType.Theme"/> set?
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+  </method>
+  <method name="IsLabelStatusSet(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Is <see cref="ManifestPropertyType.LabelStatus"/> set?
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+  </method>
+  <method name="IsSmallImagePathSet(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Is <see cref="ManifestPropertyType.SmallImagePath"/> set?
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+  </method>
+  <method name="IsMediumImagePathSet(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Is <see cref="ManifestPropertyType.MediumImagePath"/> set?
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+  </method>
+  <method name="IsThemeSetOnDark(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Is <see cref="ManifestPropertyType.Theme"/> set on Dark?
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+    <exception cref="KeyNotFoundException">
+      If property is not set.
+    </exception>
+    <returns>
+      True - if is set on Dark; false - if is set on Light.
+    </returns>
+  </method>
+  <method name="IsThemeSetOnLight(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Is <see cref="ManifestPropertyType.Theme"/> set on Light?
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+    <exception cref="KeyNotFoundException">
+      If property is not set.
+    </exception>
+    <returns>
+      True - if is set on Light; false - if is set on Dark.
+    </returns>
+  </method>
+  <method name="IsLabelStatusSetOnOn(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Is <see cref="ManifestPropertyType.LabelStatus"/> set on On?
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+    <exception cref="KeyNotFoundException">
+      If property is not set.
+    </exception>
+    <returns>
+      True - if is set on On; false - if is set on Off.
+    </returns>
+  </method>
+  <method name="IsLabelStatusSetOnOff(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Is <see cref="ManifestPropertyType.LabelStatus"/> set on Off?
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+    <exception cref="KeyNotFoundException">
+      If property is not set.
+    </exception>
+    <returns>
+      True - if is set on Off; false - if is set on On.
+    </returns>
+  </method>
+  <method name="GetSetColor(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Gets value of <see cref="ManifestPropertyType.Color"/>.
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+    <exception cref="KeyNotFoundException">
+      If property is not set.
+    </exception>
+    <returns>
+      RGB color stored in int.
+    </returns>
+  </method>
+  <method name="GetSetSmallImagePath(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Gets value of <see cref="ManifestPropertyType.SmallImagePath"/>.
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+    <exception cref="KeyNotFoundException">
+      If property is not set.
+    </exception>
+    <returns>
+      Absolute or relative path, or name.
+    </returns>
+  </method>
+  <method name="GetSetMediumImagePath(Dictionary{KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Gets value of <see cref="ManifestPropertyType.MediumImagePath"/>.
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+    <exception cref="KeyNotFoundException">
+      If property is not set.
+    </exception>
+    <returns>
+      Absolute or relative path, or name.
+    </returns>
+  </method>
+</docs>

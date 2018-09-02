@@ -1,5 +1,12 @@
+###### 1.1
+------------
+- implemented: helpers to work on property dictionary
+
+###
+­
+
 ###### 1.0
 ------------
-- Implemented: parse
-- Implemented: create
-- Implemented: validate
+- implemented: parse
+- implemented: create
+- implemented: validate

@@ -1,6 +1,6 @@
 ﻿###### VERSION
 ------------
-1.0.2
+1.1.3
 
 ###
 ­
@@ -41,6 +41,18 @@ var Properties = new ManifestProperties();
     Properties[ManifestPropertyType.LabelStatus] = "on";
     Properties[ManifestPropertyType.SmallImagePath] = "Small-Image.png";
     Properties[ManifestPropertyType.MediumImagePath] = "Medium-Image.png";
+
+var Manifest = ManifestService.Create(Properties);
+```
+or
+
+```csharp
+var Properties = new ManifestProperties();
+    Properties.SetColorOn(100, 100, 100);
+    Properties.SetThemeOnLight();
+    Properties.SetLabelStatusOnOn();
+    Properties.SetSmallImagePathOn("Small-Image.png");
+    Properties.SetMediumImagePathOn("Medium-Image.png");
 
 var Manifest = ManifestService.Create(Properties);
 ```
