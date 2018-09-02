@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<docs>
+  <header>
+    <summary>
+      Main service of VisualElementsManifest.
+    </summary>
+  </header>
+  <method name="Validate(String)">
+    <summary>
+      Validates manifest.
+    </summary>
+    <param name="Manifest">
+      Manifest in XML format, in string.
+    </param>
+    <returns>
+      True - if is valid; or falase - if is not valid.
+    </returns>
+  </method>
+  <method name="Create({KeyValuePair{ManifestPropertyType, String}})">
+    <summary>
+      Creates manifest from property dictionary.
+    </summary>
+    <param name="Properties">
+      Your collection.
+    </param>
+    <returns>
+      Manifest in XML format.
+    </returns>
+  </method>
+  <method name="Parse(String)">
+    <summary>
+      Parses manifest as property dictionary.
+    </summary>
+    <param name="Manifest">
+      Manifest in XML format, in string.
+    </param>
+    <returns>
+      Property dictionary.
+    </returns>
+  </method>
+</docs>
