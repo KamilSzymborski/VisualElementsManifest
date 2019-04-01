@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<docs>
+  <header>
+    <summary>
+      Visual element type.
+    </summary>
+  </header>
+  <value name="BackgroundColor">
+    <summary>
+      BackgroundColor
+    </summary>
+  </value>
+  <value name="ForegroundText">
+    <summary>
+      ForegroundText
+    </summary>
+  </value>
+  <value name="ShowNameOnSquare150x150Logo">
+    <summary>
+      ShowNameOnSquare150x150Logo
+    </summary>
+  </value>
+  <value name="Square70x70Logo">
+    <summary>
+      Square70x70Logo
+    </summary>
+  </value>
+  <value name="Square150x150Logo">
+    <summary>
+      Square150x150Logo
+    </summary>
+  </value>
+</docs>

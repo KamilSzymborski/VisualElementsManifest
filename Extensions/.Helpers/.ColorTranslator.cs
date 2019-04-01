@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 
 
-namespace VisualElementsManifest.Helpers
+namespace KamilSzymborski.VisualElementsManifest.Extensions
 {
     internal static class ColorTranslator
     {
@@ -13,7 +13,7 @@ namespace VisualElementsManifest.Helpers
         }
         internal static bool IsKnownColor(string Name)
         {
-            return KNOWN_COLORS.ContainsKey(Name);
+            return KNOWN_COLORS.ContainsKey(Name.ToLower());
         }
         internal static string ToHTMLColor(string Name)
         {
@@ -30,7 +30,7 @@ namespace VisualElementsManifest.Helpers
         #endregion
 
         #region Variables
-        private static readonly IReadOnlyDictionary<string, string> KNOWN_COLORS = new Dictionary<string, string>
+        private static readonly Dictionary<string, string> KNOWN_COLORS = new Dictionary<string, string>
         {
             {"black", "#000000"},
             {"silver", "#c0c0c0"},

@@ -1,12 +1,31 @@
-###### 1.1
+###### 2.0.0
 ------------
-- implemented: helpers to work on property dictionary
+```diff
+- changed: API
+```
+```diff
+- changed: code downgrade
+```
 
 ###
 ­
 
-###### 1.0
+###### 1.1.3
 ------------
-- implemented: parse
-- implemented: create
-- implemented: validate
+```diff
++ implemented: extension for visual elements dictionary
+```
+###
+­
+
+###### 1.0.2
+------------
+```diff
++ implemented: parsing
+```
+```diff
++ implemented: creation
+```
+```diff
++ implemented: validation
+```

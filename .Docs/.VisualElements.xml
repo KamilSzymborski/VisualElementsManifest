@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<docs>
+  <header>
+    <summary>
+      Short initialization of visual elements dictionary.
+    </summary>
+  </header>
+  <constructor name="()">
+    <summary>
+      Creates empty visual elements dictionary.
+    </summary>
+  </constructor>
+  <constructor name="(IDictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Creates copy of visual elements dictionary.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+  </constructor>
+</docs>

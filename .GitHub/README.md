@@ -1,73 +1,19 @@
-﻿###### VERSION
-------------
-1.1.3
-
-###
+﻿﻿﻿
+­
 ­
 
-###### ALLOCATION
-------------
-- .NET Core 2.0
-- .NET Standard 2.0
-- .NET Framework 4.5
- 
-###
-­
- 
-###### DESCRIPTION
-------------
-Service for [VisualElementsManifest](https://docs.microsoft.com/en-us/previous-versions/windows/apps/dn449733(v=win.10)).
-
-\
---> [Unit Tests](UNIT-TESTS.md)\
---> [Change Log](CHANGE-LOG.md)\
---> [Author](AUTHOR.md) and [License](LICENSE.md)
-
-\
---> [(0.85 USD) Cup of Coffee](https://www.paypal.me/kamilszymborski/0.85usd)
-
-###
 ­
 
-###### HOW TO USE
-------------
+<p align="center">   <img height="56" src="http://u.cubeupload.com/KS91293/LogoGIT.png"/>  </p>
 
-
-Create:
-```csharp
-var Properties = new ManifestProperties();
-    Properties[ManifestPropertyType.Color] = "#ffffff";
-    Properties[ManifestPropertyType.Theme] = "light";
-    Properties[ManifestPropertyType.LabelStatus] = "on";
-    Properties[ManifestPropertyType.SmallImagePath] = "Small-Image.png";
-    Properties[ManifestPropertyType.MediumImagePath] = "Medium-Image.png";
-
-var Manifest = ManifestService.Create(Properties);
-```
-or
-
-```csharp
-var Properties = new ManifestProperties();
-    Properties.SetColorOn(100, 100, 100);
-    Properties.SetThemeOnLight();
-    Properties.SetLabelStatusOnOn();
-    Properties.SetSmallImagePathOn("Small-Image.png");
-    Properties.SetMediumImagePathOn("Medium-Image.png");
-
-var Manifest = ManifestService.Create(Properties);
-```
-
-###
 ­
 
-Parse:
-```csharp
-var Properties = ManifestService.Parse("Manifest");
-```
-###
 ­
 
-Validate:
-```csharp
-var Valid = ManifestService.Validate("Manifest");
-```
+­
+
+## ­
+
+
+<p align="center"> <sub><sub> <sub> read </sub> </sub></sub> <a href="README-MORE.md"><sub><sub>more</sub></sub></a><sub><sub> <sub>, </sub> </sub></sub> <sub><sub> <sub> get </sub> </sub></sub>  <a href="https://www.nuget.org/packages/VisualElementsManifest"><sub><sub>nuget</sub></sub></a> <sub><sub> <sub> or make a </sub> </sub></sub>  <a href="https://www.paypal.me/kamilszymborski"><sub><sub>donation.</sub></sub></a> </p>
+­

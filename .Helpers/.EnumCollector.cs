@@ -3,7 +3,7 @@ using System.Linq;
 using System.Collections.Generic;
 
 
-namespace VisualElementsManifest.Helpers
+namespace KamilSzymborski.VisualElementsManifest
 {
     internal static class EnumCollector
     {

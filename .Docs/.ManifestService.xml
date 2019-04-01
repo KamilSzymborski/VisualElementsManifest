@@ -3,40 +3,40 @@
 <docs>
   <header>
     <summary>
-      Main service of VisualElementsManifest.
+      Main service.
     </summary>
   </header>
-  <method name="Validate(String)">
+  <method name="Validate(string)">
     <summary>
       Validates manifest.
     </summary>
     <param name="Manifest">
-      Manifest in XML format, in string.
+      in XML format, in String.
     </param>
     <returns>
       True - if is valid; or falase - if is not valid.
     </returns>
   </method>
-  <method name="Create({KeyValuePair{ManifestPropertyType, String}})">
+  <method name="Create({KeyValuePair{VisualElementType, string}})">
     <summary>
-      Creates manifest from property dictionary.
+      Creates manifest from visual elements dictionary.
     </summary>
-    <param name="Properties">
-      Your collection.
+    <param name="VisualElements">
+      your collection.
     </param>
     <returns>
-      Manifest in XML format.
+      manifest in XML format.
     </returns>
   </method>
-  <method name="Parse(String)">
+  <method name="Parse(string)">
     <summary>
-      Parses manifest as property dictionary.
+      Parses manifest as visual elements dictionary.
     </summary>
     <param name="Manifest">
-      Manifest in XML format, in string.
+      in XML format, in string.
     </param>
     <returns>
-      Property dictionary.
+      visual elements dictionary.
     </returns>
   </method>
 </docs>

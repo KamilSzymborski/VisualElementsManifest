@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 
 
-namespace VisualElementsManifest.Helpers
+namespace KamilSzymborski.VisualElementsManifest
 {
     internal static class StringValidator
     {

@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<docs>
+  <header>
+    <summary>
+      Extension of visual elements dictionary.
+    </summary>
+  </header>
+  <method name="SetBackgroundColorOn(Dictionary{KeyValuePair{VisualElementType, string}}, int)">
+    <summary>
+      Sets value for <see cref="VisualElementType.BackgroundColor"/>.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+    <param name="RGB">
+      RGB color stored in int.
+    </param>
+  </method>
+  <method name="SetBackgroundColorOn(Dictionary{KeyValuePair{VisualElementType, string}}, byte, byte, byte)">
+    <summary>
+      Sets value for <see cref="VisualElementType.BackgroundColor"/>.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+    <param name="R">
+      red of RGB color.
+    </param>
+    <param name="G">
+      green of RGB color.
+    </param>
+    <param name="B">
+      blue of RGB color.
+    </param>
+  </method>
+  <method name="SetForegroundTextOn(Dictionary{KeyValuePair{VisualElementType, string}}, bool)">
+    <summary>
+      Sets value for <see cref="VisualElementType.ForegroundText"/>.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+    <param name="Light">
+      Light - if true; Dark - if false.
+    </param>
+  </method>
+  <method name="SetForegroundTextOnDark(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Sets value for <see cref="VisualElementType.ForegroundText"/> on Dark.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+  </method>
+  <method name="SetForegroundTextOnLight(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Sets value for <see cref="VisualElementType.ForegroundText"/> on Light.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+  </method>
+  <method name="SetShowNameOnSquare150x150LogoOn(Dictionary{KeyValuePair{VisualElementType, string}}, bool)">
+    <summary>
+      Sets value for <see cref="VisualElementType.ShowNameOnSquare150x150Logo"/>.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+    <param name="On">
+      on - if true; off - if false.
+    </param>
+  </method>
+  <method name="SetShowNameOnSquare150x150LogoOnOn(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Sets value for <see cref="VisualElementType.ShowNameOnSquare150x150Logo"/> on On.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+  </method>
+  <method name="SetShowNameOnSquare150x150LogoOnOff(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Sets value for <see cref="VisualElementType.ShowNameOnSquare150x150Logo"/> on Off.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+  </method>
+  <method name="SetSquare70x70LogoOn(Dictionary{KeyValuePair{VisualElementType, string}}, string)">
+    <summary>
+      Sets value for <see cref="VisualElementType.Square70x70Logo"/>.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+    <param name="Path">
+      absolute or relative path, or name.
+    </param>
+  </method>
+  <method name="SetSquare150x150LogoOn(Dictionary{KeyValuePair{VisualElementType, string}}, string)">
+    <summary>
+      Sets value for <see cref="VisualElementType.Square150x150Logo"/>.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+    <param name="Path">
+      absolute or relative path, or name.
+    </param>
+  </method>
+  <method name="SetSquare70x70LogoAndSquare150x150LogoOn(Dictionary{KeyValuePair{VisualElementType, string}}, string)">
+    <summary>
+      Sets value for <see cref="VisualElementType.Square70x70Logo"/> and <see cref="VisualElementType.Square150x150Logo"/>.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+    <param name="Path">
+      absolute or relative path, or name.
+    </param>
+  </method>
+  <method name="IsBackgroundColorSet(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Is <see cref="VisualElementType.BackgroundColor"/> set?
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+  </method>
+  <method name="IsForegroundTextSet(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Is <see cref="VisualElementType.ForegroundText"/> set?
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+  </method>
+  <method name="IsShowNameOnSquare150x150LogoSet(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Is <see cref="VisualElementType.ShowNameOnSquare150x150Logo"/> set?
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+  </method>
+  <method name="IsSquare70x70LogoSet(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Is <see cref="VisualElementType.Square70x70Logo"/> set?
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+  </method>
+  <method name="IsSquare150x150LogoSet(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Is <see cref="VisualElementType.Square150x150Logo"/> set?
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+  </method>
+  <method name="IsSquare70x70LogoAndSquare150x150LogoSet(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Is <see cref="VisualElementType.Square70x70Logo"/> and <see cref="VisualElementType.Square150x150Logo"/> set?
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+  </method>
+  <method name="IsForegroundTextSetOnDark(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Is <see cref="VisualElementType.ForegroundText"/> set on Dark?
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+    <exception cref="KeyNotFoundException">
+      If property is not set.
+    </exception>
+    <returns>
+      true - if is set on Dark; false - if is set on Light.
+    </returns>
+  </method>
+  <method name="IsForegroundTextSetOnLight(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Is <see cref="VisualElementType.ForegroundText"/> set on Light?
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+    <exception cref="KeyNotFoundException">
+      If property is not set.
+    </exception>
+    <returns>
+      true - if is set on Light; false - if is set on Dark.
+    </returns>
+  </method>
+  <method name="IsShowNameOnSquare150x150LogoSetOnOn(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Is <see cref="VisualElementType.ShowNameOnSquare150x150Logo"/> set on On?
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+    <exception cref="KeyNotFoundException">
+      If property is not set.
+    </exception>
+    <returns>
+      true - if is set on On; false - if is set on Off.
+    </returns>
+  </method>
+  <method name="IsShowNameOnSquare150x150LogoSetOnOff(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Is <see cref="VisualElementType.ShowNameOnSquare150x150Logo"/> set on Off?
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+    <exception cref="KeyNotFoundException">
+      If property is not set.
+    </exception>
+    <returns>
+      true - if is set on Off; false - if is set on On.
+    </returns>
+  </method>
+  <method name="GetSetBackgroundColor(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Gets value of <see cref="VisualElementType.BackgroundColor"/>.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+    <exception cref="KeyNotFoundException">
+      If property is not set.
+    </exception>
+    <returns>
+      RGB color stored in int.
+    </returns>
+  </method>
+  <method name="GetSetSquare70x70Logo(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Gets value of <see cref="VisualElementType.Square70x70Logo"/>.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+    <exception cref="KeyNotFoundException">
+      If property is not set.
+    </exception>
+    <returns>
+      absolute or relative path, or name.
+    </returns>
+  </method>
+  <method name="GetSetSquare150x150Logo(Dictionary{KeyValuePair{VisualElementType, string}})">
+    <summary>
+      Gets value of <see cref="VisualElementType.Square150x150Logo"/>.
+    </summary>
+    <param name="VisualElements">
+      your collection.
+    </param>
+    <exception cref="KeyNotFoundException">
+      If property is not set.
+    </exception>
+    <returns>
+      absolute or relative path, or name.
+    </returns>
+  </method>
+</docs>
