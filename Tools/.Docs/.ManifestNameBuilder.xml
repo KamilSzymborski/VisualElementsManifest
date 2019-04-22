@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<docs>
+  <header>
+    <summary>
+      Will help build the name of the manifest file.
+    </summary>
+  </header>
+  <method name="Build(string)">
+    <summary>
+      Builds the name of the manifest file.
+    </summary>
+    <param name="AppName">
+      short name of application.
+    </param>
+  </method>
+</docs>

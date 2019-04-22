@@ -9,13 +9,13 @@ namespace KamilSzymborski.VisualElementsManifest
         #region Methods
         internal static string Create(IEnumerable<KeyValuePair<VisualElementType, string>> VisualElements)
         {
-            var XVisualElementsManifest = new XDocument();
+            var Manifest = new XDocument();
 
-            Utils.CreateRoot(XVisualElementsManifest);
-            Utils.CreateContainer(XVisualElementsManifest);
-            Utils.AddVisualElements(XVisualElementsManifest, VisualElements);
+            Utils.CreateRoot(Manifest);
+            Utils.CreateContainer(Manifest);
+            Utils.AddVisualElements(Manifest, VisualElements);
 
-            return XVisualElementsManifest.ToString();
+            return Manifest.ToString();
         }
         #endregion
     }

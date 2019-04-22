@@ -20,22 +20,21 @@ namespace KamilSzymborski.VisualElementsManifest
                 return false;
             }
 
-            return ValidateStructure(Manifest) && ValidateSet(Manifest) && ValidateValues(Manifest);
+            return ValidateElements(Manifest) && ValidateAttributeSet(Manifest) && ValidateValueSet(Manifest);
         }
 
-        private static bool ValidateSet(XDocument Manifest)
+        private static bool ValidateAttributeSet(XDocument Manifest)
         {
             return EnumCollector.Collect<VisualElementType>().Where(PropertyType => Data.REQUIREMENTS[PropertyType] == false).Any(Type => Utils.HasVisualElement(Manifest, Type)) ? EnumCollector.Collect<VisualElementType>().All(Type => Utils.HasVisualElement(Manifest, Type)) : EnumCollector.Collect<VisualElementType>().Where(PropertyType => Data.REQUIREMENTS[PropertyType] == true).All(Type => Utils.HasVisualElement(Manifest, Type));
         }
-        private static bool ValidateValues(XDocument Manifest)
+        private static bool ValidateValueSet(XDocument Manifest)
         {
             return EnumCollector.Collect<VisualElementType>().Where(Type => Utils.HasVisualElement(Manifest, Type)).All(Type => StringValidator.Validate(Utils.GetVisualElement(Manifest, Type).Value, Data.PATTERNS[Type], false));
         }
-        private static bool ValidateStructure(XDocument Manifest)
+        private static bool ValidateElements(XDocument Manifest)
         {
             return Utils.HasRoot(Manifest) && Utils.HasContainer(Manifest);
         }
-        
         #endregion
     }
 }

@@ -1,1 +1,0 @@
-Kamil Szymborski - kamilszymborski **at** mail **dot** com - [KamilSzymborski](https://www.github.com/KamilSzymborski)

@@ -12,13 +12,11 @@ namespace KamilSzymborski.VisualElementsManifest
         {
             return Validator.Validate(Manifest);
         }
-
         /// <include file=".Docs/.ManifestService.xml" path="docs/method[@name='Create({KeyValuePair{VisualElementType, string}})']/*"/>
         public static string Create(IEnumerable<KeyValuePair<VisualElementType, string>> VisualElements)
         {
             return Creator.Create(VisualElements);
         }
-
         /// <include file=".Docs/.ManifestService.xml" path="docs/method[@name='Parse(string)']/*"/>
         public static VisualElements Parse(string Manifest)
         {
